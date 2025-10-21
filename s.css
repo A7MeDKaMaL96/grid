@@ -1,0 +1,41 @@
+.parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 100vh;
+  grid-template-areas:
+  "image1 image2 image3"
+  "image4 image2  image3"
+  "image4 image5  image3 "
+  ;
+  gap: 10px;
+  background-color: black;
+}
+.parent div{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.image1 {
+  background-image: url(./images/p1.png);
+  grid-area: image1;
+}
+.image2 {
+  background-image: url(./images/p2.jpg);
+  grid-area: image2;
+}
+.image3 {
+  background-image: url(./images/p3.png);
+  grid-area: image3;
+}
+.image4 {
+  background-image: url(./images/p4.png);
+
+  grid-area: image4;
+}
+.image5 {
+  background-image: url(./images/p5.png);
+  grid-area: image5;
+}
+.image6 {
+  background-image: url(./images/p6.png);
+  grid-area: image6;
+}
